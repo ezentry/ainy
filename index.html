@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ainyflux — Contact lists built for your buyers</title>
+<meta name="description" content="Verified decision-maker lists, hand-built to your ideal customer profile. Under 5% bounce or we replace them free.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--a:#1e3a8a;--bg:#fff;--t:#1a1a1a;--m:#666;--l:#e5e7eb;--tint:rgba(30,58,138,.03);--err:#b42318;--ok:#067647;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#fff;--t:#1a1a1a}}
+:root[data-theme="dark"]{--bg:#fff;--t:#1a1a1a}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--t);font:17px/1.6 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.w{max-width:1100px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+h1,h2,h3,p{margin:0}
+h2{font-size:32px;line-height:1.2;font-weight:600;letter-spacing:-.01em}
+a{color:var(--a)}
+:focus-visible{outline:2px solid var(--a);outline-offset:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;background:var(--a);color:#fff;border:1px solid var(--a);border-radius:4px;padding:0 28px;font:600 16px Inter,sans-serif;text-decoration:none;cursor:pointer;transition:background .15s,color .15s}
+.btn:hover{background:#fff;color:var(--a)}
+.btn:disabled{opacity:.6;cursor:wait}
+nav{border-bottom:1px solid var(--l)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font-weight:700;letter-spacing:.08em;font-size:15px;color:var(--a)}
+nav .btn{min-height:44px;padding:0 18px;font-size:14px}
+.hero{padding:56px 0 40px}
+.hero h1{font-size:34px;line-height:1.15;font-weight:700;letter-spacing:-.025em;max-width:860px}
+.hero .sub{font-size:18px;color:var(--m);margin-top:20px;max-width:640px}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;margin-top:32px}
+.micro{font-size:14px;color:var(--m);margin-top:12px}
+.proof{border-top:1px solid var(--l);border-bottom:1px solid var(--l);margin-top:48px;padding:16px 0;display:grid;gap:4px;font-size:15px;color:var(--m)}
+.proof b{color:var(--t);font-weight:600}
+.pain{display:grid;gap:16px;margin-top:28px}
+.tile{border:1px solid #eef0f3;border-radius:4px;padding:24px}
+.tile svg{width:28px;height:28px;stroke:var(--a);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;display:block;margin-bottom:14px}
+.tile h3{font-size:18px;font-weight:700;line-height:1.3}
+.tile p{font-size:14px;color:var(--m);margin-top:6px}
+.calc{border:2px solid var(--a);background:var(--tint);border-radius:4px;padding:24px 20px}
+.calc .lead{color:var(--m);margin:8px 0 28px}
+.cg{display:grid;gap:32px}
+.f{display:block;margin-bottom:16px}
+.f>span{display:block;font-size:14px;color:var(--m);margin-bottom:6px}
+input,textarea{width:100%;min-height:48px;font:16px/1.4 Inter,sans-serif;color:var(--t);background:#fff;border:1px solid #cfd4dc;border-radius:4px;padding:11px 12px}
+textarea{min-height:0;resize:vertical}
+input:hover,textarea:hover{border-color:var(--a)}
+input:focus,textarea:focus{border:2px solid var(--a);padding:10px 11px;outline:none}
+input.bad{border-color:var(--err)}
+.out{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.lbl{font:14px Inter,sans-serif;color:var(--m)}
+.big{font-size:36px;font-weight:600;line-height:1.2;margin:4px 0 14px}
+.row{display:flex;justify-content:space-between;gap:12px;font-size:15px;padding:3px 0}
+.row span:first-child{color:var(--m)}
+.year{border-top:1px solid var(--l);margin-top:16px;padding-top:16px}
+.huge{font-size:48px;font-weight:700;line-height:1.1;color:var(--a);margin-top:4px;word-break:break-word}
+.reach{font:14px Inter,sans-serif;color:var(--t);margin-top:16px}
+details.how{margin-top:16px;font:13px/1.5 Inter,sans-serif;color:var(--m)}
+details.how summary{cursor:pointer;color:var(--a)}
+.calc .btn{margin-top:28px}
+.steps{display:grid;gap:28px;margin-top:32px}
+.n{font-size:48px;font-weight:600;color:#7b8494;line-height:1}
+.step h3{font-size:18px;font-weight:700;margin-top:10px}
+.step p{color:var(--m);margin-top:4px}
+.pg{display:grid;gap:40px;margin-top:0}
+.bold{font-size:24px;font-weight:700;line-height:1.3}
+.get{margin-top:24px;font-size:15px;color:var(--m)}
+.get b{color:var(--t);font-weight:600}
+.tbl{margin-top:20px;overflow-x:auto}
+.tbl table{border-collapse:collapse;width:100%;min-width:440px;font:13px ui-monospace,Menlo,Consolas,monospace}
+.tbl th,.tbl td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--l);white-space:nowrap}
+.tbl th{font:600 12px Inter,sans-serif;color:var(--m)}
+.tbl caption{caption-side:bottom;text-align:left;font:12px Inter,sans-serif;color:var(--m);padding-top:8px}
+form .btn{width:100%;margin-top:4px}
+.msg{margin-top:14px;font-size:15px;min-height:1.4em}
+.msg.e{color:var(--err)}.msg.s{color:var(--ok)}
+.alt{margin-top:16px;color:var(--m);font-size:15px}
+.faq{max-width:720px;margin-top:24px;border-top:1px solid var(--l)}
+.faq details{border-bottom:1px solid var(--l);padding:16px 0}
+.faq summary{font-weight:600;cursor:pointer}
+.faq p{color:var(--m);margin-top:8px}
+footer{border-top:1px solid var(--l);padding:24px 0 32px}
+footer p{font-size:13px;color:var(--m)}
+footer a{color:var(--m)}
+#bar{display:none;position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--l);padding:10px 20px calc(10px + env(safe-area-inset-bottom,0px))}
+#bar.on{display:block}
+#bar .btn{width:100%}
+@media (min-width:768px){
+.w{padding:0 32px}
+section{padding:96px 0}
+h2{font-size:40px}
+.hero{padding:96px 0 56px}
+.hero h1{font-size:48px}
+.proof{grid-template-columns:repeat(3,auto);justify-content:space-between}
+.pain{grid-template-columns:1fr 1fr;gap:20px}
+.calc{padding:48px}
+.cg{grid-template-columns:1fr 1fr;gap:56px}
+.huge{font-size:56px}
+.steps{grid-template-columns:repeat(3,1fr);gap:40px}
+.pg{grid-template-columns:1fr 1fr;gap:64px}
+#bar{display:none!important}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="w"><span class="logo">AINYFLUX</span><a class="btn" href="#pilot">Get free pilot</a></div></nav>
+
+<header class="hero" id="top"><div class="w">
+<h1>Contact lists built for your buyers. Under 5% bounce, or we replace them free.</h1>
+<p class="sub">Every contact is a verified decision-maker, hand-built to your ideal customer profile. Your SDRs stop searching and start selling.</p>
+<div class="cta-row"><a class="btn" href="#pilot">Get 20 free contacts</a><a href="#calculator">See what bad lists cost you</a></div>
+<p class="micro">Delivered in 48 hours. No payment details.</p>
+<div class="proof"><span><b>[N]</b> lists delivered</span><span><b>[X]%</b> average bounce rate</span><span>Built for teams of 200-500 in the US and UK</span></div>
+</div></header>
+
+<section style="padding-top:0"><div class="w">
+<h2>Bad lists cost more than the lists</h2>
+<div class="pain">
+<div class="tile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 .3 1.2 1 2 2 2-.5-3 0-5 1-8z"/></svg><h3>Domain reputation damaged</h3><p>One bad list can cost 3-6 months of rebuilding sender trust.</p></div>
+<div class="tile"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><h3>SDR time wasted</h3><p>Up to 60% of the day goes to searching, not selling.</p></div>
+<div class="tile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7l6 6 4-4 8 8"/><path d="M15 17h6v-6"/></svg><h3>Bounced emails</h3><p>At 20-30% bounce, roughly 1 in 4 touches reaches nobody.</p></div>
+<div class="tile"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M17 7h5M20 4l2 3-2 3"/></svg><h3>Wrong decision-maker</h3><p>A junior contact instead of the buyer means no conversation.</p></div>
+</div></div></section>
+
+<section style="padding-top:0" id="calculator"><div class="w"><div class="calc">
+<h2>What are bad lists costing your team?</h2>
+<p class="lead">Adjust the numbers. Defaults reflect a typical 3-person SDR team.</p>
+<div class="cg">
+<div>
+<label class="f"><span>SDRs on the team</span><input id="sdrs" type="number" min="0" step="1" value="3" inputmode="numeric"></label>
+<label class="f"><span>Hourly cost per SDR, fully loaded ($)</span><input id="rate" type="number" min="0" step="1" value="25" inputmode="decimal"></label>
+<label class="f"><span>Touches per day per SDR</span><input id="touch" type="number" min="0" step="1" value="40" inputmode="numeric"></label>
+<label class="f"><span>Current bounce rate (%)</span><input id="bounce" type="number" min="0" max="100" step="1" value="22" inputmode="decimal"></label>
+<label class="f"><span>Manual search hours per month, all SDRs</span><input id="hours" type="number" min="0" step="1" value="40" inputmode="numeric"></label>
+</div>
+<div class="out" aria-live="polite">
+<div class="lbl">Lost this month</div>
+<div class="big" id="month">$0</div>
+<div class="row"><span>├─ Bounced touches</span><span id="r1">$0</span></div>
+<div class="row"><span>├─ Search time</span><span id="r2">$0</span></div>
+<div class="row"><span>└─ Domain recovery</span><span id="r3">$0</span></div>
+<div class="year"><div class="lbl">Lost per year</div><div class="huge" id="year">$0</div></div>
+<p class="reach">≈ <b id="reach">0</b> emails a month reach no one</p>
+<details class="how"><summary>How we calculate this</summary><p>Assumes 22 working days of 8 hours. Bounced touches = paid SDR time spent on emails that bounce. Search time = hours × hourly cost. Domain recovery = a 25% productivity loss over 4.5 months, weighted by how far your bounce rate is above 5%, spread across 12 months.</p></details>
+</div>
+</div>
+<a class="btn" href="#pilot">Stop the losses: get 20 free contacts</a>
+</div></div></section>
+
+<section style="padding-top:0"><div class="w">
+<h2>From brief to sequencer-ready list</h2>
+<div class="steps">
+<div class="step"><div class="n">1</div><h3>Describe your buyer.</h3><p>Tell us who you sell to. We lock it in before we start.</p></div>
+<div class="step"><div class="n">2</div><h3>We build and verify.</h3><p>We source contacts, verify every email, and keep only buyer roles.</p></div>
+<div class="step"><div class="n">3</div><h3>You send.</h3><p>Spreadsheet ready for your sequencer. Bounce over 5%? We replace the list free.</p></div>
+</div></div></section>
+
+<section style="padding-top:0" id="pilot"><div class="w"><div class="pg">
+<div>
+<h2>Try it on 20 contacts first</h2>
+<p class="bold" style="margin-top:20px">20 contacts, delivered in 48 hours. Free, with no payment details.</p>
+<p class="get"><b>What you get per contact:</b> Name · Job title · Verified work email · Company · Company size · [ADDITIONAL FIELDS]</p>
+<div class="tbl"><table><caption>Sample row (masked)</caption><thead><tr><th>Name</th><th>Title</th><th>Email</th><th>Company</th><th>Size</th></tr></thead><tbody><tr><td>J. M●●●●</td><td>VP Sales</td><td>j●●●@●●●●.com</td><td>[Company]</td><td>320</td></tr></tbody></table></div>
+</div>
+<div>
+<form id="f" novalidate>
+<label class="f"><span>Work email</span><input name="email" type="email" autocomplete="email" required></label>
+<label class="f"><span>Company</span><input name="company" type="text" autocomplete="organization" required></label>
+<label class="f"><span>Who do you sell to?</span><input name="icp" type="text" placeholder="VP Sales at US fintechs, 200-500 staff" required></label>
+<label class="f"><span>Anything else we should know? (optional)</span><textarea name="notes" rows="2"></textarea></label>
+<!-- Invisible Turnstile (own domain only): <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<div class="cf-turnstile" data-sitekey="YOUR_SITEKEY" data-size="invisible"></div> -->
+<button class="btn" type="submit" id="sub">Get my 20 contacts</button>
+<p class="msg" id="msg" role="status"></p>
+</form>
+<p class="alt">Prefer email? Write to <a href="mailto:kath@ainyflux.com">kath@ainyflux.com</a>. Replies within one business day.</p>
+</div>
+</div></div></section>
+
+<section style="padding-top:0"><div class="w">
+<h2>Questions</h2>
+<div class="faq">
+<details><summary>How do you verify emails?</summary><p>[DESCRIBE VERIFICATION METHOD]</p></details>
+<details><summary>Is this compliant with GDPR/PECR and CAN-SPAM?</summary><p>[STATE YOUR LEGAL BASIS AND OPT-OUT HANDLING]</p></details>
+<details><summary>What does a full list cost?</summary><p>[PRICING MODEL]. The pilot is always free.</p></details>
+<details><summary>What if the bounce rate is above 5%?</summary><p>We replace the affected contacts at no charge.</p></details>
+</div></div></section>
+
+<footer><div class="w"><p>Ainyflux · [ADDRESS] · <a href="#">Privacy</a> · Reply "unsubscribe" to stop</p></div></footer>
+
+<div id="bar"><a class="btn" href="#pilot">Get 20 free contacts</a></div>
+
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var fmt=function(n){return '$'+Math.round(n).toLocaleString('en-US')};
+var num=function(i){var v=parseFloat($(i).value);return isFinite(v)&&v>0?v:0};
+function calc(){
+var s=num('sdrs'),r=num('rate'),t=num('touch'),b=Math.min(num('bounce'),100)/100,h=num('hours');
+var team=s*r*8*22,w=team*b,se=h*r,risk=Math.min(1,Math.max(0,b-.05)/.25),d=team*4.5*.25*risk/12,m=w+se+d;
+$('r1').textContent=fmt(w);$('r2').textContent=fmt(se);$('r3').textContent=fmt(d);
+$('month').textContent=fmt(m);$('year').textContent=fmt(m*12);
+$('reach').textContent=Math.round(s*t*22*b).toLocaleString('en-US');
+}
+['sdrs','rate','touch','bounce','hours'].forEach(function(i){$(i).addEventListener('input',calc)});calc();
+
+// Sticky mobile bar: shows after hero, hides while pilot block is visible.
+try{
+var hero=document.querySelector('.hero'),pilot=$('pilot'),bar=$('bar'),st={h:true,p:false};
+var upd=function(){bar.classList.toggle('on',!st.h&&!st.p)};
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.target===hero)st.h=e.isIntersecting;else st.p=e.isIntersecting});upd()});
+io.observe(hero);io.observe(pilot);
+}catch(e){}
+
+// Form: set ENDPOINT to your backend (verify the Turnstile token server-side). Empty = mailto fallback.
+var ENDPOINT='',f=$('f'),m=$('msg');
+function say(t,c){m.textContent=t;m.className='msg '+(c||'')}
+f.addEventListener('submit',function(e){
+e.preventDefault();
+var d={};new FormData(f).forEach(function(v,k){d[k]=v});
+var ok=true;
+['email','company','icp'].forEach(function(k){var el=f.elements[k],good=k==='email'?/^\S+@\S+\.\S+$/.test(d[k]||''):!!(d[k]||'').trim();el.classList.toggle('bad',!good);if(!good)ok=false});
+if(!ok){say('Check your work email, company, and who you sell to.','e');return}
+if(!ENDPOINT){
+window.location.href='mailto:kath@ainyflux.com?subject='+encodeURIComponent('Pilot request — '+d.company)+'&body='+encodeURIComponent('Email: '+d.email+'\nCompany: '+d.company+'\nSells to: '+d.icp+'\nNotes: '+(d.notes||''));
+say('Opening your email app to send the request.','s');return}
+var b=$('sub');b.disabled=true;b.textContent='Sending…';
+fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)})
+.then(function(r){if(!r.ok)throw 0;say('Request received. Your 20 contacts arrive within 48 hours. Check your inbox for a confirmation.','s');f.reset()})
+.catch(function(){say("We couldn't send that. Check your work email, or write to kath@ainyflux.com.",'e')})
+.then(function(){b.disabled=false;b.textContent='Get my 20 contacts'});
+});
+})();
+</script>
+</body>
+</html>
